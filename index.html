@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a470e83216.css" crossorigin="anonymous">
+    <title>Coffee Project</title>
+</head>
+<body>
+<div class="page-wrapper">
+    <header class="container header">
+        <div class="row grow no-padding">
+            <h1>The Coffee Store!</h1>
+        </div>
+    </header>
+    <section class="container coffee-display">
+        <div class="row grow no-padding">
+            <!--    LEFT COLUMN WITH COFFEE OUTPUTS   -->
+            <div class="coffee-display-wrapper">
+                <div class="coffee-list-divs">
+                    <!--    CONTAINS NEWLY GENERATED <div class="coffee"></div> ELEMENTS   -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    FORMS   -->
+    <section class="container customer-search-add">
+        <div class="row">
+            <!--    CUSTOMER CAN SEARCH FOR COFFEE   -->
+            <div class="customer-search-wrapper">
+                <div class="row grow full-width no-padding">
+                    <form id="search-form">
+                        <div class="coffee-search-wrapper">
+                            <label class="coffee-search-item" for="coffee-search" id="coffee-search-label">Search by name:</label>
+                            <input class="coffee-search-item" type="search" name="coffee-search" id="coffee-search" placeholder="Search...">
+                        </div>
+                        <div class="coffee-roast-wrapper">
+                            <label id="roast-selection-label" for="roast-selection">Search by roast:</label>
+                            <select id="roast-selection">
+                                <option>All</option>
+                                <option>Light</option>
+                                <option>Medium</option>
+                                <option>Dark</option>
+                                <option>Blend</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--    CUSTOMER CAN ADD THEIR OWN COFFEE   -->
+            <div class="customer-additions-wrapper">
+                <div class="row grow full-width no-padding">
+                    <form id="add-form" action="">
+                        <div class="customer-coffee-name-wrapper">
+                            <label for="customer-coffee-input">Coffee Name</label>
+                            <input type="text" name="customer-coffee-input" id="customer-coffee-input" placeholder="Name...">
+                        </div>
+                        <div class="customer-coffee-roast-wrapper">
+                            <label id="customer-roast-input-label" for="customer-roast-input">Add roast type:</label>
+                            <select id="customer-roast-input">
+                                <option>Light</option>
+                                <option>Medium</option>
+                                <option>Dark</option>
+                                <option>Blend</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="add-button-wrapper">
+                        <button id="add-btn" type="submit" form="add-form" value="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--<table>-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>ID</th>-->
+<!--        <th>NAME</th>-->
+<!--        <th>ROAST</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody id="coffees"></tbody>-->
+<!--</table>-->
+
+<!-- SCRIPTS -->
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
